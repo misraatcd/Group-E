@@ -34,7 +34,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Files.copy( URI.create(firstDatasetOnline).toURL().openStream(), Paths.get(firstDatasetLocal),StandardCopyOption.REPLACE_EXISTING);
 		createOntology();
-		
+		QueryGUI.initializeAppGUI();
 		/*---------Amogh's UI will go down here-----------*/
 	}
 	private static void createOntology() throws Exception {
